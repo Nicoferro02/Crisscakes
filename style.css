@@ -44,7 +44,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 /* Logo de navegacion */
 .logo{
@@ -62,6 +61,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 15px;
     text-transform: uppercase;
+
 }
 nav ul li a:hover{
     color: #FFE3CC;
@@ -69,7 +69,13 @@ nav ul li a:hover{
 nav ul{
     margin-bottom: 0;
 }
-
+/* Quitar hamburguesa */
+.nav_link{
+    display: none;
+}
+.nav_target{
+    display: none;
+}
 /* Texto Central */
 .center{
     display: block;
@@ -175,7 +181,7 @@ form .contacto{
 }
 
 .contacto span input{
-    min-width: 396px;
+    width: 396px;
     padding: 8px 5px;
     border: 2px solid grey;
     border-radius: 5px;
@@ -308,12 +314,56 @@ footer ul li a {
   }
   
 /* Media Query| Responsive */
-  @media only screen and (max-width:480px){
 
+  @media only screen and (max-width:480px){
 
     /* Todos los H1 */
     section h1{
         font-size: 30px;
+    }
+
+    /* navbar */
+    .nav_link{
+        position: fixed;
+        background:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 85px;
+        right: 60px;
+        place-items: center;
+        clip-path: circle(0 at top left);
+        transition: clip-path .4s;
+        padding-left: 0px;
+    }
+    .nav_link:target{
+        clip-path: circle(150% at top left);
+    }
+    .nav_desktop{
+        display: none;
+    }
+    nav{
+        padding-right: 60px;
+        padding-left: 15px;
+        height: 110px;
+    }
+    
+    
+    /* hamburguesa */
+    .nav_target{
+        text-decoration: none;
+        color: white;
+        display: contents;
+    }
+    .nav_target svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
     }
 
     /* PRIMER SECCION */
@@ -349,6 +399,9 @@ footer ul li a {
     #contact h2{
         font-size: 30px;
     }
+    
+}
+    
 
     /* Seccion | Donde estamos */
     iframe{
