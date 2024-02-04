@@ -39,7 +39,7 @@ nav{
     position: fixed;
     width: 100%;
     height: 140px;
-    padding: 65px 90px;
+    padding: 65px 30px;
     background: rgba(0,0,0,0.6);
     display: flex;
     justify-content: space-between;
@@ -102,7 +102,7 @@ nav ul{
     box-shadow: 0px 0px 20px 3px;
     height: 350px;
     width: 350px;
-    margin: 50px 0px;
+    margin: 50px 10px;
 }
 
 /* Seccion nuestros productos */
@@ -175,11 +175,11 @@ form h2{
 form .contacto{
     display: flex;
     align-content: center;
-    flex-wrap: wrap;
     flex-direction: column;
-    box-sizing: border-box;
 }
-
+form div{
+    max-width: 800px;
+}
 .contacto span input{
     width: 396px;
     padding: 8px 5px;
@@ -198,19 +198,10 @@ form .contacto{
     border: 2px solid grey;
     border-radius: 5px;
     margin: 3px;
-
 }
 
 /* Boton */
-button{
-    background-color: #B4BEC9;
-    font-size: 13px;
-    padding:7px;
-    color: rgb(0, 0, 0);
-    border: 1px solid black;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
+
 button:hover{
     cursor: pointer;
 }
@@ -315,7 +306,8 @@ footer ul li a {
   
 /* Media Query| Responsive */
 
-  @media only screen and (max-width:480px){
+/* Media Query MOBILE */
+  @media only screen and (max-width:660px){
 
     /* Todos los H1 */
     section h1{
@@ -331,7 +323,7 @@ footer ul li a {
         justify-content: center;
         align-items: center;
         top: 85px;
-        right: 60px;
+        right: 30px;
         place-items: center;
         clip-path: circle(0 at top left);
         transition: clip-path .4s;
@@ -344,7 +336,7 @@ footer ul li a {
         display: none;
     }
     nav{
-        padding-right: 60px;
+        padding-right: 30px;
         padding-left: 15px;
         height: 110px;
     }
@@ -400,15 +392,19 @@ footer ul li a {
         font-size: 30px;
     }
     
-}
+    .contacto span input{
+        width: 150px;
+        font-size: 14px;
+    }   
     
-
+    .contacto textarea{
+        font-size: 14px;
+    }
     /* Seccion | Donde estamos */
     iframe{
         width: 250px;
         height: 250px;
     }
-
 
     /* Pie de Pagina */
     footer {
@@ -416,9 +412,24 @@ footer ul li a {
     }
 }
 
+/* Media Query Tablet */
 
-
-
+@media only screen and (min-width:661px) and (max-width:768px){
+    nav ul li a{
+        font-size: 12px;
+    }
+    .logo{
+        width: 125px;
+        height: 125px;
+    }
+    .contacto span input{
+        max-width: 250px;
+    }
+    iframe{
+        width: 450px;
+        height: 450px;
+    }
+}
 
 
 
