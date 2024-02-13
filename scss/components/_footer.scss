@@ -1,0 +1,32 @@
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #E5E4DE;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+.pie {
+    p {
+        margin-bottom: 0px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            color: black;
+        }
+    }
+}
+

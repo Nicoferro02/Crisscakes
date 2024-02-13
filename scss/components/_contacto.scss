@@ -1,0 +1,67 @@
+/*  Formulario Contacto */
+
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../../img/back-contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  h2 {
+    padding-bottom: 15px;
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  .contacto {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+
+  div {
+    max-width: 800px;
+  }
+}
+
+.contacto {
+  span input {
+    width: 396px;
+    padding: 8px 5px;
+    border: $bordes;
+    border-radius: 5px;
+    margin: 3px 2px;
+  }
+
+  input {
+    padding: 8px 5px;
+    border: $bordes;
+    border-radius: 5px;
+    margin: 3px 2px;
+  }
+
+  textarea {
+    padding: 4px 5px;
+    border: $bordes;
+    border-radius: 5px;
+    margin: 3px;
+  }
+}
+
+/* Boton */
+
+button:hover {
+  cursor: pointer;
+}
+
+.boton {
+  text-align: right;
+}

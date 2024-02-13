@@ -1,0 +1,148 @@
+/* Media Query| Responsive */
+
+/* Media Query MOBILE */
+@media only screen and (max-width: 660px) {
+    /* Todos los H1 */
+  
+    section h1 {
+      font-size: 30px;
+    }
+  
+    /* navbar */
+  
+    .nav_link {
+      position: fixed;
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      top: 85px;
+      right: 30px;
+      place-items: center;
+      clip-path: circle(0 at top left);
+      transition: clip-path .4s;
+      padding-left: 10px;
+  
+      &:target {
+        clip-path: circle(150% at top left);
+      }
+      a{
+        font-size: 14px;
+      }
+    }
+  
+    .nav_desktop {
+      display: none;
+    }
+  
+    nav {
+      padding-right: 25px;
+      padding-left: 15px;
+      height: 110px;
+    }
+    
+    /* hamburguesa */
+  
+    .nav_target {
+      text-decoration: none;
+      color: white;
+      display: contents;
+  
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    
+    /* Logo */
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    /* PRIMER SECCION */
+  
+    #nosotros {
+      margin-top: 20px;
+    }
+  
+    .principal p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  
+    .combinado {
+      width: 200px;
+      height: 200px;
+    }
+  
+    /* Seccion Productos */
+  
+    .Products {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .card {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .content h2 {
+      font-size: 35px;
+    }
+  
+    /* Seccion Contacto */
+  
+    #contact h2 {
+      font-size: 30px;
+    }
+  
+    .contacto {
+      span input {
+        width: 150px;
+        font-size: 14px;
+      }
+  
+      textarea {
+        font-size: 14px;
+      }
+    }
+  
+    /* Seccion | Donde estamos */
+  
+    iframe {
+      width: 250px;
+      height: 250px;
+    }
+  
+    /* Pie de Pagina */
+  
+    footer {
+      font-size: 14px;
+    }
+  }
+  
+  /* Media Query Tablet */
+  
+  @media only screen and (min-width: 661px) and (max-width: 768px) {
+    nav ul li a {
+      font-size: 12px;
+    }
+  
+    .logo {
+      width: 125px;
+      height: 125px;
+    }
+  
+    .contacto span input {
+      max-width: 250px;
+    }
+  
+    iframe {
+      width: 450px;
+      height: 450px;
+    }
+  }
+  

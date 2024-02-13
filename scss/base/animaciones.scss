@@ -1,0 +1,81 @@
+
+
+/* Aimacion del Navbar */
+
+.nav_desktop li a{
+    &:hover {
+        color: #FFE3CC;
+    }
+    &::after{
+        content:'' ;
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #ffe3cc;
+        transition:width .5;
+    }
+    &:hover::after{
+        width: 100%;
+        transition: width .5s;
+    }
+}
+
+
+/* Animacion del Footer */
+
+footer ul li {
+    a {
+        width: 25px;
+        height: 25px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 25px;
+        font-size: 15px;
+        margin: 5px 10px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #fff;
+        z-index: 1;
+
+        .icon {
+            position: relative;
+            color: #262626;
+            transition: .5s;
+            z-index: 3;
+        }
+
+        &:hover .icon {
+            color: #fff;
+            transform: rotateY(360deg);
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+            z-index: 2;
+        }
+
+        &:hover:before {
+            top: 0;
+        }
+    }
+
+    &:nth-child(1) a:before {
+        background: #3b5999;
+    }
+
+    &:nth-child(2) a:before {
+        background: linear-gradient(to left, #F048AF, yellow);
+    }
+
+    &:nth-child(3) a:before {
+        background: #0077b5;
+    }
+}

@@ -1,0 +1,26 @@
+
+/* Seccion Producto | Targeta */
+
+@mixin cards {
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 5px 10px 2px black;
+    overflow: hidden;
+}
+
+.cards1{
+    @include cards;
+}
+.cards2{
+    @include cards;
+}
+.cards3{
+    @include cards;
+}
+.cards4{
+    @include cards;
+}

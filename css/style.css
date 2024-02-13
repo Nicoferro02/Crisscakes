@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* Todos los H1 */
+section h1 {
+  background: #ccc;
+  background: radial-gradient(rgb(60, 56, 56), rgba(255, 255, 255, 0.704));
+  font-family: system-ui;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-size: 45px;
+}
+
+/* Imagen de fondo con Opacidad */
+.site-header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../../img/backgroundd.header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Fondo de navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 140px;
+  padding: 65px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo de navegacion */
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+/* Navbar */
+nav ul {
+  margin-bottom: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Quitar hamburguesa */
+.nav_link,
+.nav_target {
+  display: none;
+}
+
+/* Texto Central */
+.center {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/* fuente */
+/*  Primer Seccion */
+.principal {
+  font-size: 20px;
+}
+.principal h1 {
+  margin-bottom: 15px;
+}
+.principal p {
+  line-height: 30px;
+}
+
+.combinado {
+  box-shadow: 0px 0px 20px 3px;
+  height: 350px;
+  width: 350px;
+  margin: 50px 10px;
+}
+
+/* Seccion nuestros productos */
+#product {
+  background-color: rgb(224, 216, 216);
+  padding: 40px 0px;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+}
+
+.tittle {
+  margin-top: 50px;
+}
+
+.Products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards1 {
+  background: url(../../img/torta.jpeg);
+}
+
+.cards2 {
+  background: url(../../img/desayuno.jpeg);
+}
+
+.cards3 {
+  background: url(../../img/corazon.jpeg);
+}
+
+.cards4 {
+  background: url(../../img/foto-bombones.jpeg);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.5s;
+}
+.content h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 35px;
+}
+.content:hover {
+  opacity: 1;
+}
+
+/*  Formulario Contacto */
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../../img/back-contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form h2 {
+  padding-bottom: 15px;
+  color: white;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+form .contacto {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+form div {
+  max-width: 800px;
+}
+
+.contacto span input {
+  width: 396px;
+  padding: 8px 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 3px 2px;
+}
+.contacto input {
+  padding: 8px 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 3px 2px;
+}
+.contacto textarea {
+  padding: 4px 5px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+/* Boton */
+button:hover {
+  cursor: pointer;
+}
+
+.boton {
+  text-align: right;
+}
+
+/* Seccion Donde estamos */
+#ubicacion {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 25px;
+}
+
+.ubication {
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #E5E4DE;
+  padding-top: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.pie p {
+  margin-bottom: 0px;
+}
+.pie p a {
+  text-decoration: none;
+  color: black;
+}
+.pie ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.pie ul li {
+  display: inline-block;
+  color: black;
+}
+
+/* Media Query| Responsive */
+/* Media Query MOBILE */
+@media only screen and (max-width: 660px) {
+  /* Todos los H1 */
+  section h1 {
+    font-size: 30px;
+  }
+  /* navbar */
+  .nav_link {
+    position: fixed;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 85px;
+    right: 30px;
+    place-items: center;
+    clip-path: circle(0 at top left);
+    transition: clip-path 0.4s;
+    padding-left: 10px;
+  }
+  .nav_link:target {
+    clip-path: circle(150% at top left);
+  }
+  .nav_link a {
+    font-size: 14px;
+  }
+  .nav_desktop {
+    display: none;
+  }
+  nav {
+    padding-right: 25px;
+    padding-left: 15px;
+    height: 110px;
+  }
+  /* hamburguesa */
+  .nav_target {
+    text-decoration: none;
+    color: white;
+    display: contents;
+  }
+  .nav_target svg {
+    width: 30px;
+    height: 30px;
+  }
+  /* Logo */
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  /* PRIMER SECCION */
+  #nosotros {
+    margin-top: 20px;
+  }
+  .principal p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .combinado {
+    width: 200px;
+    height: 200px;
+  }
+  /* Seccion Productos */
+  .Products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+  .content h2 {
+    font-size: 35px;
+  }
+  /* Seccion Contacto */
+  #contact h2 {
+    font-size: 30px;
+  }
+  .contacto span input {
+    width: 150px;
+    font-size: 14px;
+  }
+  .contacto textarea {
+    font-size: 14px;
+  }
+  /* Seccion | Donde estamos */
+  iframe {
+    width: 250px;
+    height: 250px;
+  }
+  /* Pie de Pagina */
+  footer {
+    font-size: 14px;
+  }
+}
+/* Media Query Tablet */
+@media only screen and (min-width: 661px) and (max-width: 768px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+  .logo {
+    width: 125px;
+    height: 125px;
+  }
+  .contacto span input {
+    max-width: 250px;
+  }
+  iframe {
+    width: 450px;
+    height: 450px;
+  }
+}
+/* Seccion Producto | Targeta */
+.cards1 {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 10px 2px black;
+  overflow: hidden;
+}
+
+.cards2 {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 10px 2px black;
+  overflow: hidden;
+}
+
+.cards3 {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 10px 2px black;
+  overflow: hidden;
+}
+
+.cards4 {
+  margin: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 5px 10px 2px black;
+  overflow: hidden;
+}
+
+/* Aimacion del Navbar */
+.nav_desktop li a:hover {
+  color: #FFE3CC;
+}
+.nav_desktop li a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #ffe3cc;
+  transition: width 0.5;
+}
+.nav_desktop li a:hover::after {
+  width: 100%;
+  transition: width 0.5s;
+}
+
+/* Animacion del Footer */
+footer ul li a {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+  margin: 5px 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #fff;
+  z-index: 1;
+}
+footer ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+footer ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+footer ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 2;
+}
+footer ul li a:hover:before {
+  top: 0;
+}
+footer ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+footer ul li:nth-child(2) a:before {
+  background: linear-gradient(to left, #F048AF, yellow);
+}
+footer ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+/*# sourceMappingURL=style.css.map */
