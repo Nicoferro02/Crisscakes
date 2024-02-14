@@ -10,6 +10,7 @@
     background-position: center;
     box-shadow: 3px 5px 10px 2px black;
     overflow: hidden;
+    position: relative;
 }
 
 .cards1{
@@ -22,5 +23,9 @@
     @include cards;
 }
 .cards4{
+    @include cards;
+}
+
+.tarjeta{
     @include cards;
 }

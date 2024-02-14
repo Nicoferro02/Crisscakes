@@ -122,11 +122,19 @@
     footer {
       font-size: 14px;
     }
+    
+    /*Pagina de tortas*/
+    .conteiner-tortas .conteiner-cards{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
   }
   
   /* Media Query Tablet */
   
-  @media only screen and (min-width: 661px) and (max-width: 768px) {
+  @media only screen and (min-width: 661px) and (max-width: 900px) {
     nav ul li a {
       font-size: 12px;
     }
@@ -143,6 +151,21 @@
     iframe {
       width: 450px;
       height: 450px;
+    }
+    
+    /* Segundo HTML */
+    .conteiner-cards .tarjeta{
+     width: 100px;
+     height: 150px;
+    }
+    .conteiner-tortas h1{
+      font-size: 25px;
+    }
+    .tarjeta .front h2{
+      font-size: 15px;
+    }
+    .oculto p{
+      font-size: 10px;
     }
   }
   
