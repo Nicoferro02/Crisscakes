@@ -6,17 +6,6 @@
   font-family: "Poppins";
 }
 
-/* Todos los H1 */
-section h1 {
-  background: #ccc;
-  background: radial-gradient(rgb(60, 56, 56), rgba(255, 255, 255, 0.704));
-  font-family: system-ui;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-align: center;
-  font-size: 45px;
-}
-
 /* Imagen de fondo con Opacidad */
 .site-header {
   height: 100vh;
@@ -81,6 +70,17 @@ nav ul li a {
 }
 
 /* fuente */
+/* Todos los H1 */
+section h1 {
+  background: #ccc;
+  background: radial-gradient(rgb(60, 56, 56), rgba(255, 255, 255, 0.704));
+  font-family: system-ui;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-size: 45px;
+}
+
 /*  Primer Seccion */
 .principal {
   font-size: 20px;
@@ -544,6 +544,12 @@ footer ul li:nth-child(2) a:before {
 }
 footer ul li:nth-child(3) a:before {
   background: #0077b5;
+}
+
+/* Hover de Tarjetas | bombones y corazones */
+.mode > .tarjeta:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 /* Tortas */

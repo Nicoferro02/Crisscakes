@@ -79,3 +79,8 @@ footer ul li {
         background: #0077b5;
     }
 }
+/* Hover de Tarjetas | bombones y corazones */
+.mode > .tarjeta:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
