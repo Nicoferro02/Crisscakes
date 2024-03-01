@@ -10,7 +10,8 @@
 .site-header {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../../img/backgroundd.header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/backgroundd.header.jpg);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,19 +120,19 @@ section h1 {
 }
 
 .cards1 {
-  background: url(../../img/torta.jpeg);
+  background: url(../img/torta.jpeg);
 }
 
 .cards2 {
-  background: url(../../img/desayuno.jpeg);
+  background: url(../img/desayuno.jpeg);
 }
 
 .cards3 {
-  background: url(../../img/corazon.jpeg);
+  background: url(../img/corazon.jpeg);
 }
 
 .cards4 {
-  background: url(../../img/foto-bombones.jpeg);
+  background: url(../img/foto-bombones.jpeg);
 }
 
 .content {
@@ -154,9 +155,10 @@ section h1 {
 
 /*  Formulario Contacto */
 #contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(../../img/back-contacto.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://img.freepik.com/fotos-premium/foto-exhibicion-pasteles-restaurante-pasteles-bellamente-decorados_933496-33509.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -323,6 +325,9 @@ footer {
     font-size: 35px;
   }
   /* Seccion Contacto */
+  #contact {
+    background-attachment: none;
+  }
   #contact h2 {
     font-size: 30px;
   }
@@ -347,6 +352,9 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  .site-header {
+    background-attachment: none;
   }
 }
 /* Media Query Tablet */
