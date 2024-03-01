@@ -11,7 +11,6 @@
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/backgroundd.header.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,7 +157,6 @@ section h1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://img.freepik.com/fotos-premium/foto-exhibicion-pasteles-restaurante-pasteles-bellamente-decorados_933496-33509.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -325,9 +323,6 @@ footer {
     font-size: 35px;
   }
   /* Seccion Contacto */
-  #contact {
-    background-attachment: none;
-  }
   #contact h2 {
     font-size: 30px;
   }
@@ -352,9 +347,6 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .site-header {
-    background-attachment: none;
   }
 }
 /* Media Query Tablet */
